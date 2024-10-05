@@ -1,0 +1,245 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A242F; /* Cool dark blue background */
+    color: #ECF0F1; /* Off white for text */
+}
+
+/* Style the H1 */
+h1 {
+    color: #F5CBA7; /* Light orange */
+    text-align: center;
+    font-weight: bold; /* Make it bold */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add spacing below the H1 */
+}
+
+/* Style the P under H1 */
+header p {
+    color: #F5CBA7; /* Same light orange */
+    text-align: center; /* Center align */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+h2 {
+    margin-bottom: 40px; /* Increased spacing between h2 and the next element */
+    font-size: 2rem;
+}
+
+.services p {
+    margin-top: 20px; /* Add some margin above the paragraph */
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ECF0F1;
+}
+
+
+
+
+
+header {
+    background-color: #2C3E50; /* Darker blue */
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F5CBA7; /* Peach accent for hover effect */
+}
+
+img {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  img:hover {
+    transform: scale(1.1); /* Adjust the scale value as desired */
+  }
+
+/* Ensure flex layout is working properly */
+.service-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the service items */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+}
+
+/* Add margin between service columns and the main section */
+.section {
+    padding: 40px 20px; /* Add more padding for spacing */
+}
+
+ .service-item {
+        max-width: 100%;
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+
+
+.section.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.services {
+    padding: 40px 20px;
+    text-align: center; /* Center-aligns the content */
+}
+
+/* Style paragraph under H2 to ensure spacing and alignment */
+.services p {
+    margin-bottom: 20px; /* Space below paragraph */
+    text-align: left; /* Left align text */
+    font-size: 1.2rem; /* Adjust font size */
+    color: #ECF0F1; /* Off white to match theme */
+}
+
+.service-columns {
+    display: flex; /* Use flexbox for a responsive layout */
+    justify-content: space-between; /* Space out the columns */
+    gap: 20px; /* Space between columns */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.service-item {
+    flex: 1; /* Each service item will grow to fill the available space */
+    max-width: 30%; /* Limit max width to ensure 3 columns */
+    transition: transform 0.3s ease; /* Transition effect for hover */
+}
+
+.service-item img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Round the corners of images */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.service-title {
+    margin: 10px 0 5px; /* Space between title and price */
+    font-weight: bold; /* Make the title bold */
+}
+
+.service-price {
+    display: block; /* Make price block-level for better spacing */
+    font-size: 1.2rem; /* Slightly larger font for the price */
+    color: #ECF0F1; /* Off white for text */ /* Adjust color for visibility */
+}
+
+/* Responsive Design: Stack columns vertically on small screens */
+@media (max-width: 768px) {
+    .service-columns {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .service-item {
+        max-width: 100%; /* Allow full width on small screens */
+    }
+}
+
+.section {
+    display: flex;
+    padding: 2rem;
+    border-bottom: 1px solid #34495E; /* Divider between sections */
+    background-color: #1A242F;
+}
+
+.section h2 {
+    color: #F5CBA7; /* Peach accent for headings */
+}
+
+.column {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Soft rounded corners for images */
+}
+#testimonial {
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+footer {
+    background-color: #2C3E50; /* Darker footer */
+    padding: 1rem;
+    text-align: center;
+    color: #ECF0F1;
+}
+
+footer a {
+    color: #F5CBA7; /* Peach accent for footer contact link */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+button {
+    background-color: #F5CBA7;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #1A242F;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #F5CBA7 0%, #FFDAB9 100%);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F5CBA7;
+    color: #1A242F;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #FFDAB9;
+}
+
+.show-back-to-top {
+    display: block;
+}
+
+/* Responsive Design: Ensure the services stack vertically on smaller screens */
+@media (max-width: 768px) {
+    .service-columns {
+        flex-direction: column;
+        align-items: center; /* Center items on small screens */
+    }
+}
+
